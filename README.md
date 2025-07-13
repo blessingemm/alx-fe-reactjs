@@ -19,18 +19,4 @@ This project introduces the core principles of React — one of the most popular
 - Integrate multiple components into a single functional app
 
 ## 📁 Project Structure
-alx-fe-reactjs/
-└── alx-react-app/
-├── public/
-├── src/
-│ ├── components/
-│ │ ├── WelcomeMessage.jsx
-│ │ ├── Header.jsx
-│ │ ├── MainContent.jsx
-│ │ ├── Footer.jsx
-│ │ └── UserProfile.jsx
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-├── package.json
-└── vite.config.js
+<pre lang="text"><code> ## 📁 Project Structure ``` alx-fe-reactjs/ └── alx-react-app/ ├── public/ ├── src/ │ ├── components/ │ │ ├── WelcomeMessage.jsx │ │ ├── Header.jsx │ │ ├── MainContent.jsx │ │ ├── Footer.jsx │ │ └── UserProfile.jsx │ ├── App.jsx │ ├── main.jsx │ └── index.css ├── package.json └── vite.config.js ``` </code></pre>
