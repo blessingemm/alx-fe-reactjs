@@ -1,6 +1,6 @@
 # ALX Front-End ReactJS Project
 
-## 📌 Project Title
+## Project Title
 **Fundamentals and Core Concepts of React**
 
 ## Description
@@ -18,5 +18,22 @@ This project introduces the core principles of React — one of the most popular
 - Pass dynamic data using props (UserProfile)
 - Integrate multiple components into a single functional app
 
-## 📁 Project Structure
-<pre lang="text"><code> ## 📁 Project Structure ``` alx-fe-reactjs/ └── alx-react-app/ ├── public/ ├── src/ │ ├── components/ │ │ ├── WelcomeMessage.jsx │ │ ├── Header.jsx │ │ ├── MainContent.jsx │ │ ├── Footer.jsx │ │ └── UserProfile.jsx │ ├── App.jsx │ ├── main.jsx │ └── index.css ├── package.json └── vite.config.js ``` </code></pre>
+## Project Structure
+
+```
+alx-fe-reactjs/
+└── alx-react-app/
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   │   ├── WelcomeMessage.jsx
+    │   │   ├── Header.jsx
+    │   │   ├── MainContent.jsx
+    │   │   ├── Footer.jsx
+    │   │   └── UserProfile.jsx
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │   └── index.css
+    ├── package.json
+    └── vite.config.js
+```
