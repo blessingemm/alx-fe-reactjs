@@ -3,8 +3,8 @@ import { Routes, Route, Link } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from '../public/components/Home'
-import About from '../public/components/About'
+import Home from './components/Home'
+import About from './components/About'
 console.log("GITHUB API URL:", import.meta.env.VITE_APP_GITHUB_API_URL);
 
 
