@@ -5,6 +5,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/Home'
 import About from './components/About'
+import { fetchGitHubUser } from './services/githubAPI';
+
 console.log("GITHUB API URL:", import.meta.env.VITE_APP_GITHUB_API_URL);
 
 
