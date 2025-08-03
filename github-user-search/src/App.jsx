@@ -5,7 +5,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
-//import { fetchGitHubUser } from './services/githubAPI';
 import Search from './components/Search'
 import Navbar from './components/NavBar'
 import Contact from './pages/Contact'
