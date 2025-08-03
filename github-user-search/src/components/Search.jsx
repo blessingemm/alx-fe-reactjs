@@ -42,7 +42,7 @@ const Search = () => {
     setUsers(data.items || []);
     setHasMore(data.total_count > PER_PAGE);
   } catch (err) {
-    setError("Looks like we can't find users matching the criteria.");
+    setError("Looks like we cant find the user");
   } finally {
     setLoading(false);
   }
