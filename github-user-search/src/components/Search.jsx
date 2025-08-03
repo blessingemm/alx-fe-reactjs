@@ -72,33 +72,33 @@ const Search = () => {
   };
 
   return (
-    <div className="search-ctn px-4 py-6 max-w-2xl mx-auto">
-      <h3 className="text-xl font-semibold mb-4">Enter a GitHub username or use the filters below</h3>
+    <div className="search-ctn">
+      <h3 className="custom-heading text-xl font-semibold mb-4">Enter a GitHub username or use the filters below</h3>
       <form className="form-fill space-y-3" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="w-full p-2 border border-gray-300 rounded"
+          className=""
           placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="text"
-          className="w-full p-2 border border-gray-300 rounded"
-          placeholder="Filter by Location (optional)"
+          className=""
+          placeholder="Filter by Location"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
         />
         <input
           type="number"
-          className="w-full p-2 border border-gray-300 rounded"
-          placeholder="Minimum Repositories (optional)"
+          className=""
+          placeholder="Minimum Repositories"
           value={minRepos}
           onChange={(e) => setMinRepos(e.target.value)}
         />
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          className=""
         >
           Search
         </button>

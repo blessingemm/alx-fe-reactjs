@@ -50,3 +50,10 @@ textarea::placeholder{
   color: #999;
   font-style: italic;
 }
+
+h3 {
+  font-size: 1.25rem; 
+  font-weight: 600;      
+  margin-bottom: 1rem;    
+}
+
