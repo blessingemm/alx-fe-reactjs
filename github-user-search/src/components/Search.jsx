@@ -1,6 +1,7 @@
 import './Search.css';
 import React, { useState } from 'react';
-import { fetchAdvancedUserData } from '../services/githubService';
+import { fetchAdvancedUserData, fetchUserData } from '../services/githubService';
+
 
 const PER_PAGE = 10;
 
@@ -15,26 +16,37 @@ const Search = () => {
   const [hasMore, setHasMore] = useState(false);
   const [lastQuery, setLastQuery] = useState({ query: '', location: '', minRepos: '' });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-    setUsers([]);
-    setPage(1);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  setError('');
+  setUsers([]);
+  setPage(1);
 
-    const query = username;
+  try {
+    let data;
 
-    try {
-      const data = await fetchAdvancedUserData(query, location, minRepos, 1, PER_PAGE);
-      setUsers(data.items || []);
-      setHasMore(data.total_count > PER_PAGE);
-      setLastQuery({ query, location, minRepos });
-    } catch (err) {
-      setError("Looks like we can't find users matching the criteria.");
-    } finally {
-      setLoading(false);
+    const isAdvancedSearch = location || minRepos;
+
+    if (isAdvancedSearch) {
+    
+      data = await fetchAdvancedUserData(username, location, minRepos, 1, PER_PAGE);
+      setLastQuery({ query: username, location, minRepos });
+    } else {
+
+      const user = await fetchUserData(username);
+      data = { items: [user], total_count: 1 };
+      setLastQuery({ query: username, location: '', minRepos: '' });
     }
-  };
+
+    setUsers(data.items || []);
+    setHasMore(data.total_count > PER_PAGE);
+  } catch (err) {
+    setError("Looks like we can't find users matching the criteria.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleLoadMore = async () => {
     setLoading(true);
