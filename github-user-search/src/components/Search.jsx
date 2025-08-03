@@ -2,7 +2,7 @@ import './Search.css';
 import React, { useState } from 'react';
 import { fetchAdvancedUserData } from '../services/githubService';
 
-const PER_PAGE = 10; // number of results per page
+const PER_PAGE = 10;
 
 const Search = () => {
   const [username, setUsername] = useState('');
@@ -13,11 +13,7 @@ const Search = () => {
   const [error, setError] = useState('');
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(false);
-  const [lastQuery, setLastQuery] = useState('');
-
-  const buildQuery = () => {
-    return `${username} ${location ? `location:${location}` : ''} ${minRepos ? `repos:>=${minRepos}` : ''}`.trim();
-  };
+  const [lastQuery, setLastQuery] = useState({ query: '', location: '', minRepos: '' });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,12 +22,13 @@ const Search = () => {
     setUsers([]);
     setPage(1);
 
+    const query = username;
+
     try {
-      const query = buildQuery();
-      const data = await fetchAdvancedUserData(query, 1, PER_PAGE);
+      const data = await fetchAdvancedUserData(query, location, minRepos, 1, PER_PAGE);
       setUsers(data.items || []);
       setHasMore(data.total_count > PER_PAGE);
-      setLastQuery(query);
+      setLastQuery({ query, location, minRepos });
     } catch (err) {
       setError("Looks like we can't find users matching the criteria.");
     } finally {
@@ -42,8 +39,16 @@ const Search = () => {
   const handleLoadMore = async () => {
     setLoading(true);
     const nextPage = page + 1;
+
     try {
-      const data = await fetchAdvancedUserData(lastQuery, nextPage, PER_PAGE);
+      const data = await fetchAdvancedUserData(
+        lastQuery.query,
+        lastQuery.location,
+        lastQuery.minRepos,
+        nextPage,
+        PER_PAGE
+      );
+
       setUsers(prevUsers => [...prevUsers, ...data.items]);
       setPage(nextPage);
       setHasMore(data.total_count > nextPage * PER_PAGE);
@@ -92,23 +97,22 @@ const Search = () => {
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {users.map((user) => (
-      <div key={user.id} className="border p-4 rounded shadow-sm flex items-center space-x-4">
-      <img src={user.avatar_url} alt="Avatar" className="w-16 h-16 rounded-full" />
-      <div>
-        <h4 className="font-semibold">{user.login}</h4>
-        <a
-          href={user.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
-        >
-          View GitHub Profile
-        </a>
+          <div key={user.id} className="border p-4 rounded shadow-sm flex items-center space-x-4">
+            <img src={user.avatar_url} alt="Avatar" className="w-16 h-16 rounded-full" />
+            <div>
+              <h4 className="font-semibold">{user.login}</h4>
+              <a
+                href={user.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                View GitHub Profile
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-  </div>
-
 
       {hasMore && !loading && (
         <button

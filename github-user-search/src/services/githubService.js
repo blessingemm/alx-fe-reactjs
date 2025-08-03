@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_APP_GITHUB_API_URL || 'https://api.github.com';
+const BASE_URL = 'https://api.github.com';
 
 export const fetchUserData = async (username) => {
   try {
@@ -11,18 +11,30 @@ export const fetchUserData = async (username) => {
   }
 };
 
-export const fetchAdvancedUserData = async (query, page = 1, perPage = 10) => {
+export const fetchAdvancedUserData = async (query, location = '', minRepos = '', page = 1, perPage = 10) => {
   try {
-    const response = await axios.get(`${BASE_URL}/search/users`, {
+    let searchQuery = query.trim();
+
+    if (location) {
+      searchQuery += ` location:${location}`;
+    }
+
+    if (minRepos) {
+      searchQuery += ` repos:>=${minRepos}`; 
+    }
+
+    const url = `https://api.github.com/search/users?q=${searchQuery}`;
+
+    const response = await axios.get(url, {
       params: {
-        q: query.trim(),
+        q: searchQuery,
         page,
         per_page: perPage,
       },
     });
+
     return response.data;
   } catch (error) {
     throw new Error('Advanced search failed');
   }
 };
-
