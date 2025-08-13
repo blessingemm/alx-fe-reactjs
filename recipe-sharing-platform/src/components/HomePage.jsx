@@ -9,7 +9,7 @@ function HomePage(){
   }, []);
 
   return(
-    <div className="grid grid-colos-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
     {recipes.map((recipes) =>(
       <Link to={`/recipe/${recipes.id}`} key={recipes.id}>
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover-shadow-xl transition-shadow ">
