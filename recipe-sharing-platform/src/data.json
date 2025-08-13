@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://plus.unsplash.com/premium_photo-1674511582428-58ce834ce172?w=700&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 3,
+    "title": "Avocado Toast",
+    "summary": "Crispy bread topped with creamy avocado, perfect for breakfast or brunch.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Caesar Salad",
+    "summary": "Fresh romaine lettuce with parmesan, croutons, and Caesar dressing.",
+    "image": "https://images.unsplash.com/photo-1605291535065-e1d52d2b264a?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 5,
+    "title": "Margherita Pizza",
+    "summary": "A simple yet delicious pizza topped with fresh tomatoes, mozzarella, and basil.",
+    "image": "https://images.unsplash.com/photo-1573821663912-6df460f9c684?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TWFyZ2hlcml0YSUyMFBpenphfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 6,
+    "title": "Beef Burger",
+    "summary": "Juicy grilled beef patty served with lettuce, cheese, and sauce in a toasted bun.",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 7,
+    "title": "Pancakes with Syrup",
+    "summary": "Fluffy pancakes served with maple syrup and butter.",
+    "image": "https://media.istockphoto.com/id/494292144/photo/breakfast.webp?a=1&b=1&s=612x612&w=0&k=20&c=3sh3-2oq5quniiX74wunY9VIMKBZ1hIexS7QuvG1B8g="
+  },
+  {
+    "id": 8,
+    "title": "Sushi Platter",
+    "summary": "An assortment of fresh sushi rolls and sashimi.",
+    "image": "https://images.unsplash.com/photo-1677632227496-be77ffe5e13d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3VzaGklMjBQbGF0dGVyfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 9,
+    "title": "Grilled Salmon",
+    "summary": "Perfectly grilled salmon fillet served with lemon and herbs.",
+    "image": "https://plus.unsplash.com/premium_photo-1723532536299-487180c8fdf5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8R3JpbGxlZCUyMFNhbG1vbnxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 10,
+    "title": "Chocolate Cake",
+    "summary": "Rich and moist chocolate cake topped with creamy frosting.",
+    "image": "https://media.istockphoto.com/id/155598375/photo/dessert-chocolate-cake.webp?a=1&b=1&s=612x612&w=0&k=20&c=FIkAx7S85NyPoo714_oyeo1IEU92uhbRwk2ftbaGCc0="
+  },
+  {
+    "id": 11,
+    "title": "Greek Salad",
+    "summary": "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and olive oil.",
+    "image": "https://media.istockphoto.com/id/93466976/photo/greek-salad-served-by-the-water-in-santorini-greece.webp?a=1&b=1&s=612x612&w=0&k=20&c=ih14sKrDoFM4BuMHBMNfSsnWWquE0BFIiDpdtDgVD-U="
+  },
+  {
+    "id": 12,
+    "title": "French Fries",
+    "summary": "Crispy golden fries served with ketchup or mayo.",
+    "image": "https://plus.unsplash.com/premium_photo-1683657860399-60f51361c65a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEZyZW5jaCUyMEZyaWVzfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 13,
+    "title": "Lobster Roll",
+    "summary": "Succulent lobster meat in a buttery toasted roll.",
+    "image": "https://images.unsplash.com/photo-1666380510734-c81855f0afdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TG9ic3RlciUyMFJvbGx8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": 14,
+    "title": "Tacos al Pastor",
+    "summary": "Mexican tacos with marinated pork, pineapple, and onions.",
+    "image": "https://images.unsplash.com/photo-1700628651129-c9ee104c5240?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFRhY29zJTIwYWwlMjBQYXN0b3J8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "id": 15,
+    "title": "Mushroom Risotto",
+    "summary": "Creamy risotto with sautéed mushrooms and parmesan.",
+    "image": "https://plus.unsplash.com/premium_photo-1694850980439-61487c39be4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TXVzaHJvb20lMjBSaXNvdHRvfGVufDB8fDB8fHww"
+  },
+  {
+    "id": 16,
+    "title": "Blueberry Muffins",
+    "summary": "Soft muffins bursting with fresh blueberries.",
+    "image": "https://media.istockphoto.com/id/175506939/photo/blueberry-muffins.webp?a=1&b=1&s=612x612&w=0&k=20&c=AgojDKDoJ14yWMOqIIsuS3_g1Z4DTzCfbQu2P_fmmFU="
+  },
+  {
+    "id": 17,
+    "title": "Steak with Vegetables",
+    "summary": "Grilled steak served with seasonal vegetables and mashed potatoes.",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 18,
+    "title": "Ice Cream Sundae",
+    "summary": "Vanilla ice cream topped with chocolate syrup, whipped cream, and a cherry.",
+    "image": "https://media.istockphoto.com/id/1264447431/photo/strawberry-ice-cream-with-fresh-strawberries.webp?a=1&b=1&s=612x612&w=0&k=20&c=TQlJ25fS9sbdrkSLwNwPRdQDHbM4ATXHVrRvLVZ-zmw="
+  },
+  {
+    "id": 19,
+    "title": "Pad Thai",
+    "summary": "Stir-fried rice noodles with shrimp, eggs, peanuts, and bean sprouts.",
+    "image": "https://media.istockphoto.com/id/2154851080/photo/pad-thai-stir-fried-rice-noodles-with-shrimp-thai-food-style.webp?a=1&b=1&s=612x612&w=0&k=20&c=FjVKkjU0VNnWe-LBiELXhk2yKpr8xUMDePLi7aFGocw="
+  },
+  {
+    "id": 20,
+    "title": "Vegetable Stir Fry",
+    "summary": "A mix of colorful vegetables stir-fried in a savory sauce.",
+    "image": "https://media.istockphoto.com/id/175455156/photo/vegetable-stir-fry.webp?a=1&b=1&s=612x612&w=0&k=20&c=T9shjZjAB7s3pzcrD3bf9OrTrrh2OLl0P3mL3pV-W4U="
+  }
+]
