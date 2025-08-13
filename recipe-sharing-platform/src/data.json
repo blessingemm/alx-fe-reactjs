@@ -3,120 +3,336 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://plus.unsplash.com/premium_photo-1674511582428-58ce834ce172?w=700&auto=format&fit=crop&q=60"
+    "image": "https://plus.unsplash.com/premium_photo-1674511582428-58ce834ce172?w=700&auto=format&fit=crop&q=60",
+    "ingredients": ["200g spaghetti", "100g pancetta", "2 eggs", "50g parmesan", "Black pepper", "Salt"],
+    "instructions": [
+      "Boil pasta in salted water until al dente.",
+      "Fry pancetta until crispy.",
+      "Mix eggs and parmesan in a bowl.",
+      "Drain pasta, add pancetta and egg mixture off heat.",
+      "Season with black pepper and serve."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
-    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&auto=format&fit=crop&q=60"
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&auto=format&fit=crop&q=60",
+    "ingredients": ["500g chicken breast", "200g yogurt", "2 tbsp tikka masala paste", "200ml tomato puree", "100ml cream", "1 onion", "2 garlic cloves"],
+    "instructions": [
+      "Marinate chicken in yogurt and tikka masala paste for 1 hour.",
+      "Grill or pan-fry chicken until cooked.",
+      "Sauté onion and garlic in butter.",
+      "Add tomato puree and cook for 5 minutes.",
+      "Stir in cream and chicken, simmer for 10 minutes."
+    ]
   },
   {
     "id": 3,
     "title": "Avocado Toast",
     "summary": "Crispy bread topped with creamy avocado, perfect for breakfast or brunch.",
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80"
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80",
+    "ingredients": ["Salt", "Lemon juice",  "Black pepper", "1 ripe avocado",  "2 slices of bread", "Chili flakes (optional)"],
+    "instructions": [
+      "Toast the bread slices until golden.",
+      "Mash avocado with lemon juice, salt, and pepper.",
+      "Spread avocado mix on toast.",
+      "Sprinkle chili flakes if desired and serve."
+    ]
   },
   {
     "id": 4,
     "title": "Caesar Salad",
     "summary": "Fresh romaine lettuce with parmesan, croutons, and Caesar dressing.",
-    "image": "https://images.unsplash.com/photo-1605291535065-e1d52d2b264a?w=500&auto=format&fit=crop&q=60"
+    "image": "https://images.unsplash.com/photo-1605291535065-e1d52d2b264a?w=500&auto=format&fit=crop&q=60",
+    "ingredients": ["Romaine lettuce", "50g parmesan", "Croutons", "Caesar dressing", "Salt", "Pepper"],
+    "instructions": [
+      "Wash and chop romaine lettuce.",
+      "Toss lettuce with Caesar dressing.",
+      "Add parmesan and croutons.",
+      "Season with salt and pepper before serving."
+    ]
   },
   {
     "id": 5,
     "title": "Margherita Pizza",
     "summary": "A simple yet delicious pizza topped with fresh tomatoes, mozzarella, and basil.",
-    "image": "https://images.unsplash.com/photo-1573821663912-6df460f9c684?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TWFyZ2hlcml0YSUyMFBpenphfGVufDB8fDB8fHww"
+    "image": "https://images.unsplash.com/photo-1573821663912-6df460f9c684?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TWFyZ2hlcml0YSUyMFBpenphfGVufDB8fDB8fHww",
+    "ingredients": ["Pizza dough", "Tomato sauce", "Fresh mozzarella", "Fresh basil", "Olive oil"],
+    "instructions": [
+      "Preheat oven to 250°C (480°F).",
+      "Spread tomato sauce on rolled-out dough.",
+      "Add mozzarella slices and basil leaves.",
+      "Drizzle with olive oil.",
+      "Bake for 8-10 minutes until golden."
+    ]
   },
   {
     "id": 6,
     "title": "Beef Burger",
     "summary": "Juicy grilled beef patty served with lettuce, cheese, and sauce in a toasted bun.",
-    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=60"
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=60",
+    "ingredients": ["Beef patty", "Burger bun", "Lettuce", "Cheddar cheese", "Tomato", "Burger sauce"],
+    "instructions": [
+      "Season beef patty with salt and pepper.",
+      "Grill until cooked to preference.",
+      "Toast buns lightly.",
+      "Assemble with lettuce, tomato, cheese, and sauce."
+    ]
   },
   {
     "id": 7,
     "title": "Pancakes with Syrup",
     "summary": "Fluffy pancakes served with maple syrup and butter.",
-    "image": "https://media.istockphoto.com/id/494292144/photo/breakfast.webp?a=1&b=1&s=612x612&w=0&k=20&c=3sh3-2oq5quniiX74wunY9VIMKBZ1hIexS7QuvG1B8g="
+    "image": "https://media.istockphoto.com/id/494292144/photo/breakfast.webp?a=1&b=1&s=612x612&w=0&k=20&c=3sh3-2oq5quniiX74wunY9VIMKBZ1hIexS7QuvG1B8g=",
+    "ingredients": ["1 cup flour", "1 cup milk", "1 egg", "1 tbsp sugar", "1 tsp baking powder", "Butter", "Maple syrup"],
+    "instructions": [
+      "Mix flour, sugar, baking powder in a bowl.",
+      "Whisk in egg and milk until smooth.",
+      "Cook batter on greased pan until bubbles form.",
+      "Flip and cook until golden.",
+      "Serve with butter and syrup."
+    ]
   },
   {
     "id": 8,
     "title": "Sushi Platter",
     "summary": "An assortment of fresh sushi rolls and sashimi.",
-    "image": "https://images.unsplash.com/photo-1677632227496-be77ffe5e13d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3VzaGklMjBQbGF0dGVyfGVufDB8fDB8fHww"
+    "image": "https://images.unsplash.com/photo-1677632227496-be77ffe5e13d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3VzaGklMjBQbGF0dGVyfGVufDB8fDB8fHww",
+    "ingredients": ["Sushi rice", "Nori sheets", "Fresh fish", "Vegetables", "Soy sauce", "Wasabi"],
+    "instructions": [
+      "Cook sushi rice and season with vinegar mix.",
+      "Place rice on nori sheet, add fillings.",
+      "Roll tightly and slice.",
+      "Serve with sashimi, soy sauce, and wasabi."
+    ]
   },
   {
     "id": 9,
     "title": "Grilled Salmon",
     "summary": "Perfectly grilled salmon fillet served with lemon and herbs.",
-    "image": "https://plus.unsplash.com/premium_photo-1723532536299-487180c8fdf5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8R3JpbGxlZCUyMFNhbG1vbnxlbnwwfHwwfHx8MA%3D%3D"
+    "image": "https://plus.unsplash.com/premium_photo-1723532536299-487180c8fdf5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8R3JpbGxlZCUyMFNhbG1vbnxlbnwwfHwwfHx8MA%3D%3D",
+    "ingredients": ["Salmon fillets", "Olive oil", "Lemon", "Fresh dill", "Salt", "Pepper"],
+    "instructions": [
+      "Preheat grill to medium-high heat.",
+      "Brush salmon with olive oil, season with salt and pepper.",
+      "Grill for 4-5 minutes per side.",
+      "Serve with lemon wedges and dill."
+    ]
   },
   {
     "id": 10,
     "title": "Chocolate Cake",
     "summary": "Rich and moist chocolate cake topped with creamy frosting.",
-    "image": "https://media.istockphoto.com/id/155598375/photo/dessert-chocolate-cake.webp?a=1&b=1&s=612x612&w=0&k=20&c=FIkAx7S85NyPoo714_oyeo1IEU92uhbRwk2ftbaGCc0="
+    "image": "https://media.istockphoto.com/id/155598375/photo/dessert-chocolate-cake.webp?a=1&b=1&s=612x612&w=0&k=20&c=FIkAx7S85NyPoo714_oyeo1IEU92uhbRwk2ftbaGCc0=",
+    "ingredients": ["1 1/2 cups flour", "1 cup sugar", "1/2 cup cocoa powder", "2 eggs", "1/2 cup butter", "1 tsp baking soda", "1 cup milk"],
+    "instructions": [
+      "Preheat oven to 180°C (350°F).",
+      "Mix dry ingredients in a bowl.",
+      "Whisk eggs, milk, and melted butter separately.",
+      "Combine and pour into greased tin.",
+      "Bake for 30-35 minutes, frost if desired."
+    ]
   },
   {
     "id": 11,
     "title": "Greek Salad",
     "summary": "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and olive oil.",
-    "image": "https://media.istockphoto.com/id/93466976/photo/greek-salad-served-by-the-water-in-santorini-greece.webp?a=1&b=1&s=612x612&w=0&k=20&c=ih14sKrDoFM4BuMHBMNfSsnWWquE0BFIiDpdtDgVD-U="
+    "image": "https://media.istockphoto.com/id/93466976/photo/greek-salad-served-by-the-water-in-santorini-greece.webp?a=1&b=1&s=612x612&w=0&k=20&c=ih14sKrDoFM4BuMHBMNfSsnWWquE0BFIiDpdtDgVD-U=",
+    "ingredients": [
+      "2 cups chopped tomatoes",
+      "1 cucumber, sliced",
+      "1/2 red onion, thinly sliced",
+      "1 cup Kalamata olives",
+      "1 cup feta cheese, cubed",
+      "3 tbsp olive oil",
+      "1 tbsp red wine vinegar",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Combine tomatoes, cucumber, red onion, and olives in a large bowl.",
+      "Add feta cheese on top.",
+      "Drizzle with olive oil and red wine vinegar.",
+      "Season with salt and pepper, then toss gently before serving."
+    ]
   },
   {
     "id": 12,
     "title": "French Fries",
     "summary": "Crispy golden fries served with ketchup or mayo.",
-    "image": "https://plus.unsplash.com/premium_photo-1683657860399-60f51361c65a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEZyZW5jaCUyMEZyaWVzfGVufDB8fDB8fHww"
+    "image": "https://plus.unsplash.com/premium_photo-1683657860399-60f51361c65a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEZyZW5jaCUyMEZyaWVzfGVufDB8fDB8fHww",
+    "ingredients": [
+      "4 large potatoes",
+      "Vegetable oil for frying",
+      "Salt to taste",
+      "Ketchup or mayonnaise for serving"
+    ],
+    "instructions": [
+      "Peel and cut potatoes into thin strips.",
+      "Soak in cold water for 30 minutes, then drain and pat dry.",
+      "Heat oil in a deep fryer or large pot.",
+      "Fry potatoes until golden brown and crispy.",
+      "Drain on paper towels, season with salt, and serve with ketchup or mayo."
+    ]
   },
   {
     "id": 13,
     "title": "Lobster Roll",
     "summary": "Succulent lobster meat in a buttery toasted roll.",
-    "image": "https://images.unsplash.com/photo-1666380510734-c81855f0afdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TG9ic3RlciUyMFJvbGx8ZW58MHx8MHx8fDA%3D"
+    "image": "https://images.unsplash.com/photo-1666380510734-c81855f0afdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TG9ic3RlciUyMFJvbGx8ZW58MHx8MHx8fDA%3D",
+    "ingredients": [
+      "2 cups cooked lobster meat, chopped",
+      "2 tbsp mayonnaise",
+      "1 tbsp lemon juice",
+      "1 tbsp chopped chives",
+      "4 hot dog buns",
+      "2 tbsp butter"
+    ],
+    "instructions": [
+      "Mix lobster meat with mayonnaise, lemon juice, and chives.",
+      "Butter the hot dog buns and toast until golden.",
+      "Fill buns with lobster mixture and serve immediately."
+    ]
   },
   {
     "id": 14,
     "title": "Tacos al Pastor",
     "summary": "Mexican tacos with marinated pork, pineapple, and onions.",
-    "image": "https://images.unsplash.com/photo-1700628651129-c9ee104c5240?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFRhY29zJTIwYWwlMjBQYXN0b3J8ZW58MHx8MHx8fDA%3D"
+    "image": "https://images.unsplash.com/photo-1700628651129-c9ee104c5240?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFRhY29zJTIwYWwlMjBQYXN0b3J8ZW58MHx8MHx8fDA%3D",
+    "ingredients": [
+      "500g pork shoulder, thinly sliced",
+      "1/2 cup pineapple juice",
+      "2 tbsp chili powder",
+      "1 tbsp vinegar",
+      "1 cup diced pineapple",
+      "1/2 cup chopped onions",
+      "8 corn tortillas"
+    ],
+    "instructions": [
+      "Marinate pork in pineapple juice, chili powder, and vinegar for at least 2 hours.",
+      "Grill or pan-fry pork until cooked.",
+      "Warm tortillas and fill with pork, pineapple, and onions.",
+      "Serve hot."
+    ]
   },
   {
     "id": 15,
     "title": "Mushroom Risotto",
     "summary": "Creamy risotto with sautéed mushrooms and parmesan.",
-    "image": "https://plus.unsplash.com/premium_photo-1694850980439-61487c39be4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TXVzaHJvb20lMjBSaXNvdHRvfGVufDB8fDB8fHww"
+    "image": "https://plus.unsplash.com/premium_photo-1694850980439-61487c39be4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TXVzaHJvb20lMjBSaXNvdHRvfGVufDB8fDB8fHww",
+    "ingredients": [
+      "1 cup arborio rice",
+      "200g mushrooms, sliced",
+      "4 cups vegetable broth",
+      "1 onion, diced",
+      "2 tbsp butter",
+      "1/2 cup grated parmesan cheese"
+    ],
+    "instructions": [
+      "Sauté onions in butter until soft.",
+      "Add mushrooms and cook until tender.",
+      "Add rice and cook for 1-2 minutes.",
+      "Gradually add broth, stirring constantly, until rice is creamy and cooked.",
+      "Stir in parmesan cheese before serving."
+    ]
   },
   {
     "id": 16,
     "title": "Blueberry Muffins",
     "summary": "Soft muffins bursting with fresh blueberries.",
-    "image": "https://media.istockphoto.com/id/175506939/photo/blueberry-muffins.webp?a=1&b=1&s=612x612&w=0&k=20&c=AgojDKDoJ14yWMOqIIsuS3_g1Z4DTzCfbQu2P_fmmFU="
+    "image": "https://media.istockphoto.com/id/175506939/photo/blueberry-muffins.webp?a=1&b=1&s=612x612&w=0&k=20&c=AgojDKDoJ14yWMOqIIsuS3_g1Z4DTzCfbQu2P_fmmFU=",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1 cup sugar",
+      "2 tsp baking powder",
+      "1/2 tsp salt",
+      "1 cup milk",
+      "1/2 cup butter, melted",
+      "2 eggs",
+      "1 cup fresh blueberries"
+    ],
+    "instructions": [
+      "Preheat oven to 375°F (190°C).",
+      "Mix dry ingredients in a bowl.",
+      "In another bowl, whisk milk, butter, and eggs.",
+      "Combine wet and dry ingredients, then fold in blueberries.",
+      "Pour into muffin tin and bake for 20-25 minutes."
+    ]
   },
   {
     "id": 17,
     "title": "Steak with Vegetables",
     "summary": "Grilled steak served with seasonal vegetables and mashed potatoes.",
-    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=500&auto=format&fit=crop&q=60"
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 steaks",
+      "2 tbsp olive oil",
+      "Salt and pepper",
+      "2 cups mixed vegetables",
+      "2 cups mashed potatoes"
+    ],
+    "instructions": [
+      "Season steaks with salt, pepper, and olive oil.",
+      "Grill steaks to desired doneness.",
+      "Steam or sauté vegetables.",
+      "Serve steaks with vegetables and mashed potatoes."
+    ]
   },
   {
     "id": 18,
     "title": "Ice Cream Sundae",
     "summary": "Vanilla ice cream topped with chocolate syrup, whipped cream, and a cherry.",
-    "image": "https://media.istockphoto.com/id/1264447431/photo/strawberry-ice-cream-with-fresh-strawberries.webp?a=1&b=1&s=612x612&w=0&k=20&c=TQlJ25fS9sbdrkSLwNwPRdQDHbM4ATXHVrRvLVZ-zmw="
+    "image": "https://media.istockphoto.com/id/1264447431/photo/strawberry-ice-cream-with-fresh-strawberries.webp?a=1&b=1&s=612x612&w=0&k=20&c=TQlJ25fS9sbdrkSLwNwPRdQDHbM4ATXHVrRvLVZ-zmw=",
+    "ingredients": [
+      "3 scoops vanilla ice cream",
+      "2 tbsp chocolate syrup",
+      "Whipped cream",
+      "1 maraschino cherry"
+    ],
+    "instructions": [
+      "Place ice cream in a bowl or sundae glass.",
+      "Drizzle chocolate syrup over ice cream.",
+      "Top with whipped cream and cherry.",
+      "Serve immediately."
+    ]
   },
   {
     "id": 19,
     "title": "Pad Thai",
     "summary": "Stir-fried rice noodles with shrimp, eggs, peanuts, and bean sprouts.",
-    "image": "https://media.istockphoto.com/id/2154851080/photo/pad-thai-stir-fried-rice-noodles-with-shrimp-thai-food-style.webp?a=1&b=1&s=612x612&w=0&k=20&c=FjVKkjU0VNnWe-LBiELXhk2yKpr8xUMDePLi7aFGocw="
+    "image": "https://media.istockphoto.com/id/2154851080/photo/pad-thai-stir-fried-rice-noodles-with-shrimp-thai-food-style.webp?a=1&b=1&s=612x612&w=0&k=20&c=FjVKkjU0VNnWe-LBiELXhk2yKpr8xUMDePLi7aFGocw=",
+    "ingredients": [
+      "200g rice noodles",
+      "200g shrimp, peeled",
+      "2 eggs",
+      "1 cup bean sprouts",
+      "1/4 cup crushed peanuts",
+      "3 tbsp soy sauce",
+      "2 tbsp fish sauce"
+    ],
+    "instructions": [
+      "Soak rice noodles in warm water until softened.",
+      "Stir-fry shrimp until cooked, then add eggs and scramble.",
+      "Add noodles, soy sauce, and fish sauce.",
+      "Toss in bean sprouts and peanuts before serving."
+    ]
   },
   {
     "id": 20,
     "title": "Vegetable Stir Fry",
     "summary": "A mix of colorful vegetables stir-fried in a savory sauce.",
-    "image": "https://media.istockphoto.com/id/175455156/photo/vegetable-stir-fry.webp?a=1&b=1&s=612x612&w=0&k=20&c=T9shjZjAB7s3pzcrD3bf9OrTrrh2OLl0P3mL3pV-W4U="
+    "image": "https://media.istockphoto.com/id/175455156/photo/vegetable-stir-fry.webp?a=1&b=1&s=612x612&w=0&k=20&c=T9shjZjAB7s3pzcrD3bf9OrTrrh2OLl0P3mL3pV-W4U=",
+    "ingredients": [
+      "2 cups mixed vegetables (broccoli, bell pepper, carrots)",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 garlic clove, minced"
+    ],
+    "instructions": [
+      "Heat sesame oil in a wok or pan.",
+      "Add garlic and stir-fry for 30 seconds.",
+      "Add vegetables and cook until tender-crisp.",
+      "Stir in soy sauce and serve hot."
+    ]
   }
 ]
