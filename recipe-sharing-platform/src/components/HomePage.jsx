@@ -8,7 +8,7 @@ function HomePage(){
   }, []);
 
   return(
-    <div className="grid grid-colos-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+    <div className="grid grid-colos-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
     {recipes.map((recipes) =>(
       <div key={recipes.id} className="bg-white rounded-lg shadow-md overflow-hidden hover-shadow-xl transition-shadow ">
         <img src={recipes.image} alt={recipes.title} className="w-full h-50 object-cover"/>
