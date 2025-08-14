@@ -8,7 +8,6 @@ export default function RecipeDetail() {
   const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
-    // Find the recipe matching the ID from the URL
     const foundRecipe = recipesData.find((r) => r.id.toString() === id);
     setRecipe(foundRecipe);
   }, [id]);
