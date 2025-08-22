@@ -4,17 +4,25 @@ const RegistrationForm = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!username || !email || !password) {
-      setError("All fields are required!");
+    if (!username) {
+      setErrors("Username is required!");
+      return;
+    }
+    if (!email) {
+      setErrors("Email is required!");
+      return;
+    }
+    if (!password) {
+      setErrors("Password is required!");
       return;
     }
 
-    setError("");
+    setErrors("");
     console.log("Form submitted:", { username, email, password });
 
     fetch("https://jsonplaceholder.typicode.com/users", {
@@ -31,14 +39,17 @@ const RegistrationForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col p-4 rounded-xl w-80 mx-auto mt-10 shadow">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col p-4 rounded-xl w-80 mx-auto mt-10 shadow"
+    >
       <h2 className="text-xl font-bold mb-8 self-center">Controlled Form</h2>
 
       <input
         type="text"
         name="username"
         placeholder="Username"
-        value={username}  
+        value={username}
         onChange={(e) => setUsername(e.target.value)}
         className="mb-2 p-2 border"
       />
@@ -47,7 +58,7 @@ const RegistrationForm = () => {
         type="email"
         name="email"
         placeholder="Email"
-        value={email}   
+        value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="mb-2 p-2 border rounded"
       />
@@ -56,12 +67,12 @@ const RegistrationForm = () => {
         type="password"
         name="password"
         placeholder="Password"
-        value={password} 
+        value={password}
         onChange={(e) => setPassword(e.target.value)}
         className="mb-2 p-2 border rounded"
       />
 
-      {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
+      {errors && <p className="text-red-500 text-sm mb-2">{errors}</p>}
 
       <button
         type="submit"
