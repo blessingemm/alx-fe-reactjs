@@ -4,8 +4,12 @@ import * as Yup from "yup";
 
 const validationSchema = Yup.object({
   username: Yup.string().required("Username is required"),
-  email: Yup.string().email("Invalid email format").required("Email is required"),
-  password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
+  email: Yup.string()
+    .email("Invalid email format")
+    .required("Email is required"),
+  password: Yup.string()
+    .min(6, "Password must be at least 6 characters")
+    .required("Password is required"),
 });
 
 const FormikForm = () => {
@@ -40,38 +44,52 @@ const FormikForm = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <Form>
-          <Field
-            type="text"
-            name="username"
-            placeholder="Username"
-            className="w-full mb-2 p-2 border rounded"
-          />
-          <ErrorMessage name="username" component="p" className="text-red-500 text-sm mb-2" />
+        {() => (
+          <Form>
+            <Field
+              type="text"
+              name="username"
+              placeholder="Username"
+              className="w-full mb-2 p-2 border rounded"
+            />
+            <ErrorMessage
+              name="username"
+              component="p"
+              className="text-red-500 text-sm mb-2"
+            />
 
-          <Field
-            type="email"
-            name="email"
-            placeholder="Email"
-            className="w-full mb-2 p-2 border rounded"
-          />
-          <ErrorMessage name="email" component="p" className="text-red-500 text-sm mb-2" />
+            <Field
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="w-full mb-2 p-2 border rounded"
+            />
+            <ErrorMessage
+              name="email"
+              component="p"
+              className="text-red-500 text-sm mb-2"
+            />
 
-          <Field
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="w-full mb-2 p-2 border rounded"
-          />
-          <ErrorMessage name="password" component="p" className="text-red-500 text-sm mb-2" />
+            <Field
+              type="password"
+              name="password"
+              placeholder="Password"
+              className="w-full mb-2 p-2 border rounded"
+            />
+            <ErrorMessage
+              name="password"
+              component="p"
+              className="text-red-500 text-sm mb-2"
+            />
 
-          <button
-            type="submit"
-            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"
-          >
-            Register
-          </button>
-        </Form>
+            <button
+              type="submit"
+              className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"
+            >
+              Register
+            </button>
+          </Form>
+        )}
       </Formik>
     </div>
   );
