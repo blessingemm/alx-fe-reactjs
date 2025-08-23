@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import BlogPost from "./pages/BlogPost";
 import Login from "./pages/Login";
+import Profile from "./components/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {

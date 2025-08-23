@@ -1,7 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import ProfileDetails from "./ProfileDetails";
 import ProfileSettings from "./ProfileSettings";
-
 function Profile() {
   return (
     <div className="p-4">
