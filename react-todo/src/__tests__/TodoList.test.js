@@ -20,15 +20,20 @@ test("adds a new todo", () => {
 test("toggles a todo", () => {
   render(<TodoList />);
   const todoItem = screen.getByText("Learn React");
+
   expect(todoItem).not.toHaveStyle("text-decoration: line-through");
+
   fireEvent.click(todoItem);
+
   expect(todoItem).toHaveStyle("text-decoration: line-through");
 });
 
 test("deletes a todo", () => {
   render(<TodoList />);
   const todoItem = screen.getByText("Learn React");
-  const deleteButton = todoItem.querySelector("button");
+  const deleteButton = screen.getByRole("button", { name: /delete learn react/i });
+
   fireEvent.click(deleteButton);
+
   expect(screen.queryByText("Learn React")).not.toBeInTheDocument();
 });
